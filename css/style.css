@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+body 
+{
+      font-family: "Manrope", sans-serif;
+      overflow-x: hidden;
+}
+.hero
+{
+    background: linear-gradient(to top, #535f756c, #000), url(https://aaroniceducation.com.np/wp-content/uploads/2024/01/DSC01082-scaled.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+h1,h2,h3,h4,h5,h6 
+{
+    font-weight: bold;
+}
+.container 
+{
+    max-width: 1280px;
+}
+.navbar-expand-lg .navbar-nav .nav-link
+{
+    color: #fff;
+    padding: 15px;
+}
+.bb 
+{
+    border-bottom: 0.2px solid #393636;
+}
+.logo 
+{
+    border-right: 0.2px solid #393636;
+}
+.hero-content 
+{
+    color: #fff;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 1000px;
+}
+.hero-content  h1 
+{
+    font-size: 65px;
+}
+.hero-content  h2
+{
+    font-size: 65px;
+
+    color: #d05754;
+}
+.cbox
+{
+    text-align: center;
+    padding: 30px;
+}
+.cbox:hover 
+{
+    background: url(https://aaroniceducation.com.np/wp-content/themes/aaronic/images/icons/shape-3.jpg);
+    color: #fff;
+}
+.cbox img 
+{
+    transition: 0.9s;
+}
+.cbox:hover img 
+{
+    transform: rotate(360deg);
+}
+.bg1 
+{
+    background-color: #AF7E2F;
+    background-image: url(https://aaroniceducation.com.np/wp-content/themes/aaronic/images/icons/map3.png);
+    height: 50vh;
+}
+.aaa 
+{
+    position: absolute;
+    top: -140px;
+    right:-100px;
+}
+.img{
+    background: url(https://aaroniceducation.com.np/wp-content/themes/aaronic/images/icons/pattern-8.jpg);
+}
+.ss li 
+{
+    position: relative;
+}
+.ss li::after 
+{
+    position: absolute;
+    width: 100%;
+    left: 0; height: 2px ; background: #000; content: ''; top: 100%; transform: scale(0,1); transition: 0.9s; transform-origin: left top;
+}
+@media (max-width: 480px) {
+    .aaa{ display: none;}
+    .hero-content  h1 , .hero-content  h2{ font-size: 22px;}
+}
+.ss li:hover::after 
+{
+    transform: scale(1);
+}
